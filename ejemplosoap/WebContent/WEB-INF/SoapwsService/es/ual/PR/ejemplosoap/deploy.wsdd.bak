@@ -1,0 +1,30 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from SoapwsService WSDL service -->
+
+  <service name="Soapws" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://ejemplosoap.PR.ual.es"/>
+      <parameter name="wsdlServiceElement" value="SoapwsService"/>
+      <parameter name="schemaQualified" value="http://ejemplosoap.PR.ual.es"/>
+      <parameter name="wsdlServicePort" value="Soapws"/>
+      <parameter name="className" value="es.ual.PR.ejemplosoap.SoapwsSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="Soapws"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="suma" qname="operNS:suma" xmlns:operNS="http://ejemplosoap.PR.ual.es" returnQName="retNS:sumaReturn" xmlns:retNS="http://ejemplosoap.PR.ual.es" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:a" xmlns:pns="http://ejemplosoap.PR.ual.es" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:b" xmlns:pns="http://ejemplosoap.PR.ual.es" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="suma"/>
+
+  </service>
+</deployment>
