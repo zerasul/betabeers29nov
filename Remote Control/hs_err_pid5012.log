@@ -1,0 +1,107 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3494), pid=5012, tid=6128
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 6.0_37-b06
+# Java VM: Java HotSpot(TM) Client VM (20.12-b01 mixed mode windows-x86 )
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x016fa000):  JavaThread "Unknown thread" [_thread_in_vm, id=6128, stack(0x00290000,0x002e0000)]
+
+Stack: [0x00290000,0x002e0000],  sp=0x002df86c,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x13471a]
+V  [jvm.dll+0x12f20b]
+V  [jvm.dll+0x167de]
+V  [jvm.dll+0x1802f]
+V  [jvm.dll+0x275a5]
+V  [jvm.dll+0x27de6]
+V  [jvm.dll+0x28195]
+V  [jvm.dll+0x28229]
+V  [jvm.dll+0x282ec]
+V  [jvm.dll+0x2836a]
+V  [jvm.dll+0x2844d]
+V  [jvm.dll+0x28719]
+V  [jvm.dll+0x6ce03]
+V  [jvm.dll+0x6d1dc]
+V  [jvm.dll+0xfa6dc]
+V  [jvm.dll+0x11902b]
+V  [jvm.dll+0x9f4e0]
+C  [javaw.exe+0x1657]
+C  [javaw.exe+0x1e2c]
+C  [javaw.exe+0x8614]
+C  [kernel32.dll+0x4ed6c]  BaseThreadInitThunk+0x12
+C  [ntdll.dll+0x6377b]  RtlInitializeExceptionChain+0xef
+C  [ntdll.dll+0x6374e]  RtlInitializeExceptionChain+0xc2
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x016fa000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=6128, stack(0x00290000,0x002e0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00400000 - 0x00425000 	C:\Program Files\Java\jre6\bin\javaw.exe
+0x779e0000 - 0x77b1c000 	C:\Windows\SYSTEM32\ntdll.dll
+0x76a90000 - 0x76b64000 	C:\Windows\system32\kernel32.dll
+0x75260000 - 0x752ab000 	C:\Windows\system32\KERNELBASE.dll
+0x76cd0000 - 0x76d70000 	C:\Windows\system32\ADVAPI32.dll
+0x75560000 - 0x7560c000 	C:\Windows\system32\msvcrt.dll
+0x75730000 - 0x75749000 	C:\Windows\SYSTEM32\sechost.dll
+0x76890000 - 0x76931000 	C:\Windows\system32\RPCRT4.dll
+0x75880000 - 0x75949000 	C:\Windows\system32\USER32.dll
+0x75950000 - 0x7599e000 	C:\Windows\system32\GDI32.dll
+0x77b20000 - 0x77b2a000 	C:\Windows\system32\LPK.dll
+0x75460000 - 0x754fd000 	C:\Windows\system32\USP10.dll
+0x76790000 - 0x767af000 	C:\Windows\system32\IMM32.DLL
+0x75750000 - 0x7581c000 	C:\Windows\system32\MSCTF.dll
+0x7c340000 - 0x7c396000 	C:\Program Files\Java\jre6\bin\msvcr71.dll
+0x6d7f0000 - 0x6daa0000 	C:\Program Files\Java\jre6\bin\client\jvm.dll
+0x72ec0000 - 0x72ef2000 	C:\Windows\system32\WINMM.dll
+0x75000000 - 0x7504c000 	C:\Windows\system32\apphelp.dll
+0x6d7a0000 - 0x6d7ac000 	C:\Program Files\Java\jre6\bin\verify.dll
+0x6d320000 - 0x6d33f000 	C:\Program Files\Java\jre6\bin\java.dll
+0x6d370000 - 0x6d399000 	C:\Program Files\Java\jre6\bin\jdwp.dll
+0x6d690000 - 0x6d696000 	C:\Program Files\Java\jre6\bin\npt.dll
+0x6d7e0000 - 0x6d7ef000 	C:\Program Files\Java\jre6\bin\zip.dll
+0x767b0000 - 0x767b5000 	C:\Windows\system32\PSAPI.DLL
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:49288 -Dfile.encoding=Cp1252 -Xbootclasspath:C:\Program Files\Android\android-sdk\platforms\android-8\android.jar 
+java_command: org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 49287 -testLoaderClass org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestLoader -loaderpluginname org.eclipse.jdt.junit.runtime -classNames es.ual.PR.RMServer.comm.CommunicationClassTest
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files/Java/jre6/bin/client;C:/Program Files/Java/jre6/bin;C:/Program Files/Java/jre6/lib/i386;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files\Microsoft Visual Studio 10.0\Common7\IDE;C:\Program Files\Microsoft Visual Studio 10.0\VC\bin;c:\devkitPro\msys\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\ C:\Users\victor\Android\android-sdk-windows\tools\;C:\Program Files\Windows Live\Shared;C:\Program Files\Microsoft Compute Cluster Pack\Bin\;C:\Program Files\OpenVPN\bin
+USERNAME=victor
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 15 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7601 Service Pack 1
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 15 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3
+
+Memory: 4k page, physical 2087352k(528448k free), swap 4174704k(2259792k free)
+
+vm_info: Java HotSpot(TM) Client VM (20.12-b01) for windows-x86 JRE (1.6.0_37-b06), built on Sep 24 2012 12:44:35 by "java_re" with MS VC++ 7.1 (VS2003)
+
+time: Wed Apr 10 23:13:23 2013
+elapsed time: 0 seconds
+

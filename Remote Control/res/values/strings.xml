@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">Remote Control</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_remote__control">Remote Control</string>
+    <string name="avpag">Avpag</string>
+    <string name="repag">Repag</string>
+    <string name="left">&lt;-</string>
+    <string name="right">-&gt;</string>
+    <string name="conectar">Conectar</string>
+    <string name="errrornoconectado">Error, debe conectarse primero</string>
+    <string name="errorconexion">Error en la conexion</string>
+    <string name="hostnoencontrado">Direccion no encontrada</string>
+    <string name="titulo">Control Remoto</string>
+
+</resources>
